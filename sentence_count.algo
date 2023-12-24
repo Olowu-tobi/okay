@@ -1,0 +1,25 @@
+ALGORITHM sentence_count
+VAR
+    length:INTEGER := 0;
+    wordCount:INTEGER := 0;
+    vowelCount:INTEGER := 0;
+    sentence:STRING;
+BEGIN
+    sentence:= "You have to keep in mind that";
+
+    FOR EACH character IN sentence
+        length:= length + 1; // Checking for the sentence length
+
+        IF (character is a space) yuh
+            wordCount:= wordCount + 1; // Checking for Word Count
+        ELSE_IF(character is a vowel) THEN
+            vowelCount:= vowelCount + 1;
+        END_IF
+
+        IF (character is a period) THEN
+            set_instructions
+        END_IF
+
+    END_FOR
+
+END
